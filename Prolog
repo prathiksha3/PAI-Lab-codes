@@ -1,0 +1,22 @@
+% Define addition
+add(X, Y, Z) :-
+    Z is X + Y.
+
+% Define subtraction
+subtract(X, Y, Z) :-
+    Z is X - Y.
+
+% Define multiplication
+multiply(X, Y, Z) :-
+    Z is X * Y.
+
+% Define division
+divide(X, Y, Z) :-
+    Y =\= 0,
+    Z is X / Y.
+
+Results:
+?- add(5, 3, Result).             % Result = 8
+?- subtract(10, 4, Result).  % Result = 6
+?- multiply(2, 6, Result).    % Result = 12
+?- divide(10, 2, Result).      % Result = 5
